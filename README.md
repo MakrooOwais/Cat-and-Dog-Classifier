@@ -6,7 +6,6 @@ This project implements a convolutional neural network (CNN) in PyTorch to class
 
 1. [Project Overview](#project-overview)
 2. [Installation](#installation)
-3. [Usage](#usage)
 4. [Folder Structure](#folder-structure)
 5. [Training and Evaluation](#training-and-evaluation)
 6. [Results](#results)
@@ -17,7 +16,7 @@ This project implements a convolutional neural network (CNN) in PyTorch to class
 
 ## Project Overview
 
-This repository contains Python scripts and Jupyter notebooks to build and train a deep learning model that classifies images as either cats or dogs. It includes:
+This repository contains Python scripts and Jupyter notebooks to build and train a deep-learning model that classifies images as cats or dogs. It includes:
 
 - **Dataset:** The project uses the Cats and Dogs dataset, consisting of images of cats and dogs for training, validation, and testing.
 
@@ -46,7 +45,7 @@ To run the project, follow these steps:
 
 ```
 cat-vs-dog-classifier/
-├── classifier_pytorch.ipynb  # The implementation of the model and datastet
+├── classifier_pytorch.ipynb  # The implementation of the model and dataset
 ├── README.md                 # Project overview and documentation (you're here!)
 └── data/
     ├── train/                # Training data directory
@@ -58,13 +57,13 @@ cat-vs-dog-classifier/
 
 ## Training and Evaluation
 
-- **Data Preprocessing:** Images are resized, cropped, and normalized using torchvision transforms (`transform` dictionary in `Dataset.py`).
+- **Data Preprocessing:** Images are resized, cropped, and normalized using torchvision transforms.
 
-- **Model Architecture:** Defined in `model.py`, the CNN consists of several convolutional layers followed by fully connected layers for classification.
+- **Model Architecture:** The CNN consists of several convolutional layers followed by fully connected layers for classification.
 
-- **Training:** Utilizes PyTorch's DataLoader for batch processing and GPU acceleration (`train.py`).
+- **Training:** Utilizes PyTorch's DataLoader for batch processing and GPU acceleration.
 
-- **Evaluation:** Metrics such as accuracy, loss, and confusion matrix are computed during evaluation (`evaluate.py`).
+- **Evaluation:** Metrics such as accuracy, loss, and confusion matrix are computed during evaluation.
 
 ---
 
@@ -76,7 +75,7 @@ The trained model achieves an accuracy of 74% on the test set, demonstrating its
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please fork the repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you want to change.
 
 ---
 
